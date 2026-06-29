@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Playing Cards</title>
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+      }
+
+      body {
+         background-color: #d8bfd8;
+         height: 100vh;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      #playing-cards {
+         display: flex;
+         justify-content: center;
+         flex-wrap: wrap;
+         gap: 20px;
+         max-width: 1200px;
+         margin: 0 auto;
+      }
+
+      .card {
+         background-color: #eee;
+         height: 400px;
+         flex: 0 0 255px;
+         border: 1px solid #000;
+         border-radius: 20px;
+         box-shadow: 2px 2px 5px 2px #333;
+         padding: 10px;
+         display: flex;
+         justify-content: space-between;
+         font-size: 2rem;
+      }
+
+      .left {
+         align-self: flex-start;
+      }
+
+      .middle {
+         align-self: center;
+         height: 200px;
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+         align-items: center;
+         font-size: 5rem;
+      }
+
+      .middle p:nth-of-type(2),
+      .middle p:nth-of-type(4) {
+         transform: rotate(180deg);
+      }
+
+      .right {
+         align-self: flex-end;
+         transform: rotate(180deg);
+      }
+   </style>
+</head>
+<body>
+   
+   <main id="playing-cards">
+
+      <div class="card">
+         <div class="left">
+            <p>4</p>
+            <p>♠</p>
+         </div>
+         <div class="middle">
+            <p>♠</p>
+            <p>♠</p>
+            <p>♠</p>
+            <p>♠</p>
+         </div>
+         <div class="right">
+            <p>4</p>
+            <p>♠</p>
+         </div>
+      </div>
+      <div class="card">
+         <div class="left">
+            <p>4</p>
+            <p>♠</p>
+         </div>
+         <div class="middle">
+            <p>♠</p>
+            <p>♠</p>
+            <p>♠</p>
+            <p>♠</p>
+         </div>
+         <div class="right">
+            <p>4</p>
+            <p>♠</p>
+         </div>
+      </div>
+      <div class="card">
+         <div class="left">
+            <p>4</p>
+            <p>♠</p>
+         </div>
+         <div class="middle">
+            <p>♠</p>
+            <p>♠</p>
+            <p>♠</p>
+            <p>♠</p>
+         </div>
+         <div class="right">
+            <p>4</p>
+            <p>♠</p>
+         </div>
+      </div>
+
+   </main>
+
+</body>
+</html>
