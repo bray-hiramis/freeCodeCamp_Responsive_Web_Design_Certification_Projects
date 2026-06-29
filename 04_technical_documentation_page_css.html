@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Technical Documentation Page</title>
+
+   <style>
+      * {
+         box-sizing: border-box;
+         margin: 0;
+         padding: 0;
+      }
+      
+      html {
+         scroll-behavior: smooth;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+         font-size: 18px;
+      }
+
+      code {
+         color: crimson;
+         background-color: #eee;
+         display: inline-block;
+         padding: 0.25rem;
+      }
+
+      ul {
+         margin: 50px;
+      }
+
+      .container {
+         display: flex;
+      }
+
+      .clear {
+         clear: both;
+      }
+
+      /* navbar */
+
+      #navbar {
+         float: left;
+         overflow-y: scroll;
+         min-width: 500px;
+      }
+
+      #navbar .nav-container a {
+         display: block;
+         text-decoration: none;
+         color: #555;
+         border: 2px solid;
+         font-size: 1.5rem;
+         padding: 30px 0 30px 30px;
+      }
+
+      #navbar header h1 {
+         font-size: 3rem;
+         padding: 20px 0;
+      }
+
+      /* main doc */
+
+      #main-doc {
+         width: 100%;
+         padding: 30px;
+      }
+
+      .main-section {
+         border-bottom: 1px solid;
+         padding: 20px;
+      }
+
+      .main-section:last-of-type {
+         border-bottom: none;
+      }
+
+      .main-section header {
+         font-weight: 600;
+         font-size: 1.2rem;
+         margin-bottom: 10px;
+      }
+
+      .main-section ul li[class="data-types"] {
+         font-weight: bold;
+      }
+
+      /* media query */
+
+      @media (max-width: 768px) {
+
+         .container {
+            display: block;
+         }
+
+         #navbar {
+            min-width: 100%;
+            overflow: hidden;
+         }
+
+         #maindoc {
+            margin-top: 30px;
+         }
+
+      }
+
+   </style>
+
+</head>
+<body>
+
+   <div class="container">
+
+      <nav id="navbar">
+         <header>
+            <h1>PHP Basics</h1>
+         </header>
+         <div class="nav-container">
+            <a href="#PHP_Syntax" class="nav-link">PHP Syntax</a>
+            <a href="#PHP_Variables" class="nav-link">PHP Variables</a>
+            <a href="#PHP_echo_and_print" class="nav-link">PHP echo and print</a>
+            <a href="#PHP_Data_Types" class="nav-link">PHP Data Types</a>
+            <a href="#PHP_Strings" class="nav-link">PHP Strings</a>
+         </div>
+      </nav>
+   
+      <div class="clear"></div>
+      
+      <main id="main-doc">
+   
+         <section class="main-section" id="PHP_Syntax">
+            <header>PHP Syntax</header>
+            <p>A PHP script is executed on the server, and the plain HTML result is sent back to the browser.</p>
+            <p>A PHP script can be placed anywhere in the document.</p>
+            <p>A PHP script starts with <code>&lt;?php</code> and ends with <code>?&gt;:</code></p>
+         </section>
+   
+         <section class="main-section" id="PHP_Variables">
+            <header>PHP Variables</header>
+            <p>Variables are "containers" for storing information.</p>
+            <p>A variable can have a short name (like <code>$x</code> and <code>$y</code>) or a more descriptive name (<code>$age</code>, <code>$carname</code>, <code>$total_volume</code>).</p>
+            <p>Rules for PHP variables:</p>
+            <ul>
+               <li>A variable must start with the <code>$</code> sign, followed by the name of the variable</li>
+               <li>A variable name must start with a letter or the underscore character</li>
+               <li>A variable name cannot start with a number</li>
+               <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+               <li>Variable names are case-sensitive (<code>$age</code> and <code>$AGE</code> are two different variables)</li>
+            </ul>
+         </section>
+   
+         <section class="main-section" id="PHP_echo_and_print">
+            <header>PHP echo and print</header>
+            <p>With PHP, there are two basic ways to output data to the screen: <code>echo</code> and <code>print</code>.</p>
+            <p>The differences are small:</p>
+            <ul>
+               <li><code>echo</code> has no return value, while <code>print</code> has a return value of 1 so it can be used in expressions</li>
+               <li><code>echo</code> can take multiple parameters, while <code>print</code> can take only one argument</li>
+               <li><code>echo</code> is marginally faster than <code>print</code></li>
+            </ul>
+         </section>
+   
+         <section class="main-section" id="PHP_Data_Types">
+            <header>PHP Data Types</header>
+            <p>Variables can store data of different types, and different data types can do different things.</p>
+            <p>PHP supports the following data types:</p>
+            <ul>
+               <li class="data-types">string</li>
+               <li class="data-types">int</li>
+               <li class="data-types">float</li>
+               <li class="data-types">bool</li>
+               <li class="data-types">array</li>
+               <li class="data-types">object</li>
+               <li class="data-types">null</li>
+               <li class="data-types">resource</li>
+            </ul>
+         </section>
+   
+         <section class="main-section" id="PHP_Strings">
+            <header>PHP Strings</header>
+            <p>A string is a sequence of characters, like "Hello world!".</p>
+            <p>n PHP, strings are surrounded by either double quotes, or single quotes.</p>
+         </section>
+   
+      </main>
+
+   </div>
+
+
+</body>
+</html>
