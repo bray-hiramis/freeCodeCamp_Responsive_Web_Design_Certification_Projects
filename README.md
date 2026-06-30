@@ -13,12 +13,12 @@ As part of my journey to become a web developer, I'm taking the freeCodeCamp Res
 ### 3. Book Inventory App (CSS module)
 <img src="./project_screenshots/book_inventory_app.png" alt="Book Inventory App - A certification project for freeCodeCamp Responsive Web Design certification" width="400">
 
-### 4. Technical Documentation Page - Desktop View (CSS module)
+### 4. Technical Documentation Page (CSS module)
 | Desktop View | Mobile View |
 | ------------ | ------------ |
 | <img src="./project_screenshots/technical_documentation.png" alt="Technical Documentation Page Desktop View - A certification project for freeCodeCamp Responsive Web Design certification" width="300"> | <img src="./project_screenshots/technical_documentation_mobile_view.png" alt="Technical Documentation Page Desktop View - A certification project for freeCodeCamp Responsive Web Design certification" width="200">
 
-### 5. Product Landing Page - Desktop View (CSS module)
+### 5. Product Landing Page (CSS module)
 | Desktop View | Mobile View |
 | ------------ | ----------- |
 | <img src="./project_screenshots/product_landing_page.png" alt="Product Landing Page - Desktop View - A certification project for freeCodeCamp Responsive Web Design certification" width="300"> | <img src="./project_screenshots/product_landing_page_mobile_view.png" alt="Product Landing Page - Desktop View - A certification project for freeCodeCamp Responsive Web Design certification" width="100">
