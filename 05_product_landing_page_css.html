@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Product Landing Page</title>
+   <script src="https://kit.fontawesome.com/f911defdbe.js" crossorigin="anonymous"></script>
+
+   <style>
+
+      :root {
+         --bg-color: #eee;
+         --main-color: #f03634;
+         --second-color: #c72f2c;
+         --space-s: 10px;
+         --space-m: 20px;
+         --space-l: 40px;
+      }
+
+      *,
+      *::before,
+      *::after {
+         box-sizing: border-box;
+         margin: 0;
+         padding: 0;
+      }
+
+      html {
+         font-size: 10px;
+      }
+
+      body {
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+         background-color: var(--bg-color);
+         line-height: 1.5;
+      }
+
+      h1 {
+         font-size: 7rem;
+      }
+
+      h2 {
+         font-size: 4rem;
+      }
+
+      p,
+      a {
+         font-size: 2rem;
+      }
+
+      li {
+         list-style: none;
+      }
+
+      a {
+         text-decoration: none;
+         color: #000;
+      }
+
+      img {
+         object-fit: cover;
+         max-width: 100%;
+         display: block;
+         min-height: 100%;
+      }
+
+      body {
+         margin-top: 90px;
+      }
+
+      /* utilities */
+
+      .container {
+         max-width: 1200px;
+         margin: 0 auto;
+         padding: 0 var(--space-m);
+      }
+
+      .btn {
+         background-color: var(--main-color);
+         color: var(--bg-color);
+         text-transform: uppercase;
+         font-size: 2.4rem;
+         font-weight: bold;
+         padding: 15px 30px;
+         border: none;
+         border-radius: 10px;
+         margin: var(--space-m) 0;
+         width: 100%;
+         cursor: pointer;
+      }
+
+      .btn:hover {
+         background-color: var(--second-color);
+      }
+
+      .btn-second-color {
+         background-color: var(--bg-color);
+         color: var(--main-color);
+      }
+
+      .btn-second-color:hover {
+         background-color: #ffe0e0;
+      }
+
+      .box {
+         width: 350px;
+         border: 2px solid var(--main-color);
+         border-radius: 10px;
+         padding: var(--space-l);
+         transition: .3s;
+      }
+
+      .box:hover {
+         box-shadow: 0 0 5px #333;
+      }
+
+      i[class*="fa"] {
+         font-size: 6rem;
+         margin-bottom: var(--space-m);
+      }
+
+      .price {
+         font-weight: bold;
+         padding: var(--space-s) 0;
+         font-size: 2.4rem;
+         text-decoration: underline;
+      }
+
+      /* header */
+
+      #header #nav-bar {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         flex-wrap: wrap;
+         background-color: var(--main-color);
+         color: #fff;
+         z-index: 2;
+      }
+
+      #header #nav-bar #logo {
+         padding-left: var(--space-l);
+      }
+      
+      #header #nav-bar #logo a {
+         font-size: 2.8rem;
+         color: #eee;
+      }
+
+      #header #nav-bar .nav-list {
+         display: flex;
+         flex-wrap: wrap;
+         padding: 20px 20px;
+      }
+
+      #header #nav-bar .nav-list .nav-link {
+         color: #fff;
+         padding: 20px;
+         /* transition: .3s ease; */
+      }
+
+      #header #nav-bar .nav-list .nav-link:hover {
+         background-color: var(--second-color);
+         border-bottom: 2px solid #000;
+      }
+
+      #header .hero {
+         display: flex;
+         height: 50vh;
+      }
+
+      #header .hero .hero-text {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         padding: var(--space-l);
+         row-gap: var(--space-m);
+      }
+
+      #header .hero .header-img-container {
+         width: 700px;
+         padding: var(--space-l);
+      }
+
+      /* Main */
+
+      #coffees .coffee {
+         display: flex;
+         align-items: center;
+         gap: var(--space-m);
+      }
+
+      #coffees .coffee img {
+         width: 300px;
+         height: 300px;
+      }
+
+      #coffees .coffee .description {
+         padding: var(--space-m);
+      }
+
+      /* video section */
+
+      #product-video {
+         margin: var(--space-l) 0;
+         padding: var(--space-l);
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      }
+
+      #product-video h2 {
+         margin: var(--space-m);
+      }
+
+      /* Deliveries */
+
+      #deliveries {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: var(--space-s);
+         flex-wrap: wrap;
+      }
+
+      .option1 {
+         order: 1;
+         background-color: var(--main-color);
+         color: #eee;
+      }
+
+      .option3 {
+         order: 2;
+      }
+
+      /* Subscribtion Section */
+
+      #subscribe {
+         margin: var(--space-l) 0;
+      }
+
+      #subscribe input[type="email"] {
+         display: block;
+         width: 100%;
+         padding: var(--space-m);
+         border-radius: 10px;
+         font-size: 2rem;
+         border: 1px solid var(--main-color);
+      }
+
+      #subscribe input[type="email"]:focus {
+         border: 1px solid var(--main-color);
+         outline: 1px solid var(--main-color);
+      }
+
+      /* footer */
+
+      footer {
+         text-align: center;
+         margin-bottom: var(--space-l);
+      }
+
+      /* media query */
+
+      @media screen and (max-width: 768px) {
+
+         body {
+            margin-top: 180px;
+         }
+         
+         #header #nav-bar {
+            justify-content: center;
+         }
+
+         #header .hero .header-img-container {
+            display: none;
+         }
+
+         .coffee {
+            flex-direction: column;
+         }
+
+      }
+
+      @media screen and (max-width: 425px) {
+
+         .hero-text {
+            display: block;
+            width: 100%;
+         }
+
+         .header-img-container {
+            display: none;
+         }
+
+         .coffee img {
+            display: none;
+         }
+
+         .video {
+            max-width: 50px;
+         }
+
+      }
+
+   </style>
+
+</head>
+<body>
+   
+   <div class="container">
+
+      <header id="header">
+         <nav id="nav-bar">
+            <p id="logo"><a href="#header"><i class="fa-solid fa-mug-saucer"></i> Nescafe</a></p>
+            <ul class="nav-list">
+               <li><a href="#coffees" class="nav-link">Our Coffees</a></li>
+               <li><a href="#product-video" class="nav-link">How we make our Coffee</a></li>
+               <li><a href="#deliveries" class="nav-link">Delivery</a></li>
+            </ul>
+         </nav>
+         <div class="hero">
+            <div class="hero-text">
+               <h1>Nescafe</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi officia itaque dolorem nesciunt voluptate eos tempore fugit nostrum totam consequuntur.</p>
+            </div>
+            <div class="header-img-container">
+               <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffacts.net%2Fwp-content%2Fuploads%2F2023%2F11%2F15-nescafe-coffee-nutrition-facts-1700720931.jpg&f=1&nofb=1&ipt=ae8d734472d50782c1ebcc51dc3a3fb1ac5693ae64215ae0d73168be3e9faa78" alt="A nescafe cup sorrounded by a sack of coffee beans" id="header-img" width="400">
+            </div>
+         </div>
+      </header>
+
+      <main>
+
+         <!-- Coffee section ================================================= -->
+
+         <section id="coffees">
+            <div class="coffee">
+               <img src="https://www.nescafe.com/ph/sites/default/files/styles/pdp_banner_image/public/2025-03/Classic_pack%20front.png.webp?itok=q_yYrQ5U" alt="Nescafe Classic">
+               <div class="description">
+                  <h2>Nescafe Classic</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eveniet assumenda autem aspernatur accusamus laborum fugit animi necessitatibus consectetur qui?</p>
+                  <p class="price">$3.00</p>
+               </div>
+            </div>
+            <div class="coffee">
+               <img src="https://www.nescafe.com/ph/sites/default/files/styles/pdp_banner_image/public/2025-07/PXR_NESCAFEGOLD_INTENSE_2g_MU_241105_03-F.png.webp?itok=3VdyreNB" alt="Nescafe Gold">
+               <div class="description">
+                  <h2>Nescafe Gold</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eveniet assumenda autem aspernatur accusamus laborum fugit animi necessitatibus consectetur qui?</p>
+                  <p class="price">$7.00</p>
+               </div>
+            </div>
+            <div class="coffee">
+               <img src="https://www.nescafe.com/ph/sites/default/files/styles/pdp_banner_image/public/2024-06/Untitled-3_1.png.webp?itok=DfYLNXcp" alt="Sugarfree Original | Stevia Coffee">
+               <div class="description">
+                  <h2>Sugarfree Original | Stevia Coffee</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eveniet assumenda autem aspernatur accusamus laborum fugit animi necessitatibus consectetur qui?</p>
+                  <p class="price">$10.00</p>
+               </div>
+            </div>
+         </section>
+
+         <!-- Product Video Section ================================================= -->
+
+         <section id="product-video">
+            <h2>How our products made?</h2>
+            <iframe src="https://www.youtube.com/embed/hporCspYd0c" id="video" width="640" height="315"></iframe>
+         </section>
+
+         <!-- Delivery option section ================================================= -->
+
+         <section id="deliveries">
+            <div class="option1 box">
+               <i class="fa-solid fa-truck-fast"></i>
+               <h2>Overnight Shipping</h2>
+               <p class="price">$50</p>
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, nemo?</p>
+               <button type="button" class="btn btn-second-color">select</button>
+            </div>
+            <div class="option2 box">
+               <i class="fa-solid fa-truck"></i>
+               <h2>Standard Shipping</h2>
+               <p class="price">$20</p>
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, nemo?</p>
+               <button type="button" class="btn">select</button>
+            </div>
+            <div class="option3 box">
+               <i class="fa-solid fa-plane"></i>
+               <h2>Global Shipping</h2>
+               <p class="price">$120</p>
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, nemo?</p>
+               <button type="button" class="btn">select</button>
+            </div>
+         </section>
+
+         <!-- Email - subscribe section ================================================= -->
+
+         <section id="subscribe">
+            <h2>Subscribe to our mailing to received offers and new product update</h2>
+            <form action="https://www.freecodecamp.org/email-submit" method="post" id="form">
+               <input type="email" name="email" id="email" placeholder="e.g., fake@email.com">
+               <input type="submit" value="Subscribe" id="submit" class="btn">
+            </form>
+         </section>
+
+      </main>
+
+      <!-- footer section ================================================= -->
+
+      <footer>
+         <p>Made with ♥️ by Bray Hiramis | &copy; 2026</p>
+      </footer>
+
+   </div>
+
+
+   
+
+</body>
+</html>

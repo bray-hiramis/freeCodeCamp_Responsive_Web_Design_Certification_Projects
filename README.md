@@ -19,6 +19,12 @@ As part of my journey to become a web developer, I'm taking the freeCodeCamp Res
 ### 4.1. Technical Documentation Page - Mobile View (CSS module)
 ![Screenshot of Technical Documentation Page Mobile View - A certification project for freeCodeCamp Responsive Web Design certification](./project_screenshots/technical_documentation_mobile_view.png)
 
+### 5. Product Landing Page - Desktop View (CSS module)
+![Screenshot of Product Landing Page - Desktop View - A certification project for freeCodeCamp Responsive Web Design certification](./project_screenshots/product_landing_page.png)
+
+### 5.1. Product Landing Page - Mobile View (CSS module)
+![Screenshot of Product Landing Page - Mobile View - A certification project for freeCodeCamp Responsive Web Design certification](./project_screenshots/product_landing_page_mobile_view.png)
+
 Thank you for visiting this repository!
 
 Brian Hiramis - Author
