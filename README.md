@@ -5,25 +5,23 @@ As part of my journey to become a web developer, I'm taking the freeCodeCamp Res
 ## Below are the projects (in order) that I successfully passed:
 
 ### 1. Survey Form (HTML module)
-![Screenshot of Survey Form - A certification project for freeCodeCamp Responsive Web Design certification](./project_screenshots/survey_form.png)
+<img src="./project_screenshots/survey_form.png" alt="Survey Form - A certification project for freeCodeCamp Responsive Web Design certification" width="400">
 
 ### 2. Playing Cards (CSS module)
-![Screenshot of Playing Cards - A certification project for freeCodeCamp Responsive Web Design certification](./project_screenshots/playing_cards.png)
+<img src="./project_screenshots/playing_cards.png" alt="Playing Cards - A certification project for freeCodeCamp Responsive Web Design certification" width="400">
 
 ### 3. Book Inventory App (CSS module)
-![Screenshot of Book Inventory App - A certification project for freeCodeCamp Responsive Web Design certification](./project_screenshots/book_inventory_app.png)
+<img src="./project_screenshots/book_inventory_app.png" alt="Book Inventory App - A certification project for freeCodeCamp Responsive Web Design certification" width="400">
 
 ### 4. Technical Documentation Page - Desktop View (CSS module)
-![Screenshot of Technical Documentation Page Desktop View - A certification project for freeCodeCamp Responsive Web Design certification](./project_screenshots/technical_documentation.png)
-
-### 4.1. Technical Documentation Page - Mobile View (CSS module)
-![Screenshot of Technical Documentation Page Mobile View - A certification project for freeCodeCamp Responsive Web Design certification](./project_screenshots/technical_documentation_mobile_view.png)
+| Desktop View | Mobile View |
+| ------------ | ------------ |
+| <img src="./project_screenshots/technical_documentation.png" alt="Technical Documentation Page Desktop View - A certification project for freeCodeCamp Responsive Web Design certification" width="300"> | <img src="./project_screenshots/technical_documentation_mobile_view.png" alt="Technical Documentation Page Desktop View - A certification project for freeCodeCamp Responsive Web Design certification" width="200">
 
 ### 5. Product Landing Page - Desktop View (CSS module)
-![Screenshot of Product Landing Page - Desktop View - A certification project for freeCodeCamp Responsive Web Design certification](./project_screenshots/product_landing_page.png)
-
-### 5.1. Product Landing Page - Mobile View (CSS module)
-![Screenshot of Product Landing Page - Mobile View - A certification project for freeCodeCamp Responsive Web Design certification](./project_screenshots/product_landing_page_mobile_view.png)
+| Desktop View | Mobile View |
+| ------------ | ----------- |
+| <img src="./project_screenshots/product_landing_page.png" alt="Product Landing Page - Desktop View - A certification project for freeCodeCamp Responsive Web Design certification" width="300"> | <img src="./project_screenshots/product_landing_page_mobile_view.png" alt="Product Landing Page - Desktop View - A certification project for freeCodeCamp Responsive Web Design certification" width="100">
 
 Thank you for visiting this repository!
 
