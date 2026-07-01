@@ -23,6 +23,14 @@ As part of my journey to become a web developer, I'm taking the freeCodeCamp Res
 | ------------ | ----------- |
 | <img src="./project_screenshots/product_landing_page.png" alt="Product Landing Page - Desktop View - A certification project for freeCodeCamp Responsive Web Design certification" width="300"> | <img src="./project_screenshots/product_landing_page_mobile_view.png" alt="Product Landing Page - Desktop View - A certification project for freeCodeCamp Responsive Web Design certification" width="100">
 
+## Bonus Project
+
+### fCC Personal Portfolio
+
+| Desktop View | Mobile View |
+| ------------ | ----------- |
+| <img src="./project_screenshots/portfolio.png" alt="fCC Personal Portfolio Project" width="300"> | <img src="./project_screenshots/portfolio_mobile_view.png" alt="fCC Personal Portfolio Project" width="100">
+
 > [!NOTE]
 > All projects (excluding Survey Form) uses internal CSS.
 
